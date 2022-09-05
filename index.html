@@ -5,10 +5,99 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jon Ledo's Web Portfolio</title>
+  <!-- Linked CSS files -->
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <!-- make all eternal links open in a new page -->
+  <base target="_blank">
 </head>
 <body>
-  
+<!-- NAV START -->
+  <section class="nav-section">
+    <p class="nav-section__name">
+      Jon Ledo
+    </p>
+    <nav class="navbar">
+      <ul class="navbar__list">
+        <li><a href="#about" class="navbar__link">About</a></li>
+        <li><a href="#projects" class="navbar__link">Projects</a></li>
+        <li><a href="#contact" class="navbar__link">Contact</a></li>
+      </ul>
+    </nav>
+  </section>
+<!-- NAV END -->
+
+<!-- HEADER -->
+  <header class="header">
+    <h1 class="header__text">Cool Subtitle Here</h1>
+  </header>
+<!-- HEADER END -->
+
+<!-- ABOUT START -->
+  <section id="about" class="about">
+    <aside class="aside about__aside">
+      <h2 class="about__header">About</h2>
+    </aside>
+
+    <article class="about__article">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cum voluptatibus perferendis, aut architecto exercitationem cumque praesentium illo voluptates, assumenda, quis delectus! Blanditiis aut reiciendis neque aliquid iste deleniti ratione quis eligendi tenetur perspiciatis unde sequi ad magni quia ipsum maxime sapiente maiores totam fugit nemo, necessitatibus veniam exercitationem? Nihil!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum commodi odio cupiditate repellendus minima ea aspernatur temporibus? Libero vitae totam ducimus itaque delectus molestiae praesentium facere blanditiis, quas numquam consequuntur reiciendis culpa deserunt tenetur, beatae eius tempore eaque suscipit!</p>
+    </article>
+  </section>
+<!-- ABOUT END -->
+
+<!-- PROJECTS START -->
+  <section id="projects" class="projects">
+    <aside class="aside projects__aside">
+      <h2 class="projects__header">Projects</h2>
+    </aside>
+
+    <!-- MAIN PROJECT -->
+    <main class="projects__main">
+      <article class="main-card">
+        <h3 class="main-card__name">Project Name 1</h3>
+        <p class="main-card__info">Project Info</p>
+      </article>
+    </main>
+
+    <!-- PROJECT GALLERY -->
+    <section class="projects__gallery">
+      <article class="card">
+        <h3 class="card__name">Project Name 2</h3>
+        <p class="card__info">Project Info</p>
+      </article>
+      <article class="card">
+        <h3 class="card__name">Project Name 3</h3>
+        <p class="card__info">Project Info</p>
+      </article>
+      <article class="card">
+        <h3 class="card__name">Project Name 4</h3>
+        <p class="card__info">Project Info</p>
+      </article>
+      <article class="card">
+        <h3 class="card__name">Project Name 5</h3>
+        <p class="card__info">Project Info</p>
+      </article>
+    </section>
+  </section>
+<!-- PROJECTS END -->
+
+<!-- CONTACT START -->
+  <section id="contact" class="contact">
+    <aside class="aside contact__aside">
+      <h2 class="contact__header">Contact</h2>
+    </aside>
+
+    <ul class="socials">
+      <li><a href="#" class="socials__link">Email</a></li>
+      <li><a href="#" class="socials__link">Github</a></li>
+      <li><a href="#" class="socials__link">LinkedIn</a></li>
+    </ul>
+  </section>
+<!-- CONTACT END -->
+
+  <footer>
+    <p>copyright</p>
+  </footer>
 </body>
 </html>
