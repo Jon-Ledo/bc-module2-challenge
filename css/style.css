@@ -1,0 +1,106 @@
+/* COLOURS AND FONTS */
+:root {
+  --red: #BD3B13;
+  --black: #373731;
+  --off-white: #F0EFE5;
+  /* montserat */
+}
+
+/* GENERAL STYLES */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 10% 0 0;
+}
+
+.aside {
+  min-width: 20%;
+  border-right: 3px solid red;
+  margin-right: 5%;
+}
+
+section {
+  padding-bottom: 30px;
+}
+
+/* NAV STYLES */
+.nav-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__list {
+  display: flex;
+  justify-content: center;
+}
+
+/* HEADER */
+.header {
+  /* TODO adjust height later */
+  height: 100px;
+  position: relative;
+}
+
+.header__text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* PROJECTS */
+.projects {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects-container {
+  width: 100%;
+}
+
+.projects__main {
+  width: 100%;
+  border: 2px solid red;
+}
+
+.projects__gallery {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 0 min(50%, 350px);
+}
+
+/* CONTACT */
+.contact {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.socials {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.socials__link {
+  padding: 0 35px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: auto;
+}
