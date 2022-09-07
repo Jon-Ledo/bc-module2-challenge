@@ -15,6 +15,7 @@
 html {
   /* makes 1rem === 10px */
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -50,6 +51,10 @@ section {
   padding-bottom: 30px;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* NAV STYLES */
 .nav-section {
   padding-top: 10px;
@@ -78,7 +83,6 @@ section {
 }
 
 .navbar__link {
-  text-decoration: none;  
   margin-left: 25px;
   padding-bottom: 7px;
   color: var(--white);
@@ -209,10 +213,20 @@ section {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .socials__link {
-  padding: 0 35px;
+  padding-bottom: 6px;
+  margin: 0 25px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--black);
+  border-bottom: 4px solid var(--red);
+}
+
+.socials__link:hover {
+  border-bottom: 4px solid var(--lightRed);
 }
 
 /* FOOTER */
