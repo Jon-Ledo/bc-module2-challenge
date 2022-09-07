@@ -231,6 +231,10 @@ a {
 
 /* FOOTER */
 footer {
-  text-align: center;
+  text-align: end;
   margin-top: auto;
+  background-color: var(--black);
+  padding: 20px;
+  color: var(--white);
+  font-size: 1.4rem;
 }
