@@ -29,7 +29,7 @@ body {
 
 .wrapper {
   max-width: 1440px;
-  margin: 0 10% 0 auto;
+  margin: 0 10%;
 }
 
 .aside {
@@ -41,7 +41,7 @@ body {
 }
 
 h2 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: var(--red);
   font-weight: 600;
 }
@@ -91,7 +91,7 @@ section {
 
 /* HEADER */
 .header {
-  height: 180px;
+  height: 200px;
   position: relative;
   background-image: url(../Assets/images/placeholder-pattern.jpg);
   background-size: 100%;
@@ -127,32 +127,82 @@ section {
 /* PROJECTS */
 .projects {
   display: flex;
-  justify-content: space-between;
 }
 
 .projects-container {
   width: 100%;
+  padding-bottom: 0;
 }
 
 .projects__main {
+  border: 5px solid var(--lightRed);
+  position: relative;
+}
+
+.projects__main__img {
   width: 100%;
-  border: 2px solid red;
+  display: block;
+  opacity: 0.7;
+}
+
+.projects__main__img:hover {
+  opacity: 1;
+}
+
+.main-card,
+.card__container {
+  background-color: var(--lightRed);
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 15px;
+}
+
+.main-card__name,
+.card__name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--white);
+  text-shadow: 2px 2px var(--black);
+}
+
+.main-card__info,
+.card__info {
+  font-size: 1.3rem;
+  padding-top: 5px;
 }
 
 .projects__gallery {
-  margin-top: 15px;
+  margin-top: 20px;
+  padding-bottom: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
 }
 
 .card {
-  flex: 1 0 min(50%, 350px);
+  flex: 1 0 45%;
+  border: 5px solid var(--lightRed);
+  height: 150px;
+  position: relative;
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.card__img:hover {
+  opacity: 1;
 }
 
 /* CONTACT */
 .contact {
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .socials {
