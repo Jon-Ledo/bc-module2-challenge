@@ -24,6 +24,7 @@ body {
   font-family: var(--fontFamily);
   background-color: var(--off-white);
   letter-spacing: 1px;
+  line-height: 1.15;
 }
 
 .wrapper {
@@ -33,8 +34,16 @@ body {
 
 .aside {
   min-width: 20%;
-  border-right: 3px solid var(--red);
+  border-right: 5px solid var(--red);
   margin-right: 5%;
+  text-align: end;
+  padding-right: 10px;
+}
+
+h2 {
+  font-size: 4.5rem;
+  color: var(--red);
+  font-weight: 600;
 }
 
 section {
@@ -104,6 +113,15 @@ section {
 .about {
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
+}
+
+.about__article {
+  font-size: 1.6rem;
+}
+
+.about__article p:first-child {
+  margin-bottom: 20px;
 }
 
 /* PROJECTS */
