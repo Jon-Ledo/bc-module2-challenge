@@ -8,6 +8,10 @@
   <!-- Linked CSS files -->
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/ed48cba7cc.js" crossorigin="anonymous"></script>
+  <!-- Linked JavaScript File -->
+  <script src="./script.js" defer></script>
 </head>
 <body>
 <!-- NAV START -->
@@ -17,12 +21,18 @@
         <span>Jon Ledo</span>
       </p>
       <nav class="navbar">
-        <ul class="navbar__list">
-          <li><a href="#about" class="navbar__link">About Me</a></li>
-          <li><a href="#projects" class="navbar__link">Projects</a></li>
-          <li><a href="#contact" class="navbar__link">Contact</a></li>
-        </ul>
+        <div class="navbar__list-container">
+          <ul class="navbar__list">
+            <li><a href="#about" class="navbar__link">About Me</a></li>
+            <li><a href="#projects" class="navbar__link">Projects</a></li>
+            <li><a href="#contact" class="navbar__link">Contact</a></li>
+          </ul>
+        </div>
       </nav>
+      <!-- hamburger menu hidden by default-->
+      <button class="toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
   </section>
 <!-- NAV END -->
