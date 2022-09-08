@@ -45,7 +45,7 @@ body {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3.7rem;
   color: var(--red);
   font-weight: 600;
 }
@@ -64,7 +64,7 @@ a {
   background-color: var(--black);
 }
 
-.nav-section div {
+.nav-section > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,6 +83,7 @@ a {
   display: flex;
   justify-content: center;
   font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .navbar__link {
@@ -94,6 +95,24 @@ a {
 
 .navbar__link:hover {
   border-bottom: 3px solid var(--lightRed);
+}
+
+/* TOGGLE BUTTON */
+.toggle-btn {
+  z-index: 2;
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+.fas.fa-bars {
+  font-size: 3rem;
+  color: var(--off-white);
+  cursor: pointer;
+}
+
+.fas.fa-bars:hover {
+  color: var(--red);
 }
 
 /* HEADER */
@@ -243,7 +262,7 @@ footer {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 1050px) {
+@media (max-width: 1060px) {
   .wrapper {
     max-width: 1050px;
     margin: 0 5% 0 0;
@@ -281,6 +300,55 @@ footer {
 }
 
 @media (max-width: 750px) {
+  .toggle-btn {
+    display: block;
+  }
+
+  .navbar__list-container {
+    display: none;
+  }
+
+  .navbar__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    background-color: #373731;
+    z-index: 1;
+  }
+  
+  .navbar__list li {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--red);
+  }
+  
+  .navbar__list li:first-child {
+    margin-top: 48px;
+  }
+  
+  .navbar__link {
+    padding: 15px 25px;
+    margin-left: 0;
+    color: var(--white);
+    border-bottom: none;
+  }
+  
+  .navbar__link:hover {
+    color: #ccebf3;
+    border-bottom: none;
+    background-color: #454541;
+  }
+
+  .navbar__list-container.active {
+    display: block;
+  }
+
   .header {
     height: 170px;
   }
@@ -337,6 +405,10 @@ footer {
 }
 
 @media (max-width: 545px) {
+  .navbar__list {
+    width: 50%;
+  }
+
   .nav-section__name {
     font-size: 2.8rem;
     padding: 5px 15px;
