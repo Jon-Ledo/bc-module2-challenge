@@ -121,6 +121,16 @@ a {
   color: var(--red);
 }
 
+.fas.fa-times {
+  font-size: 3rem;
+  color: var(--off-white);
+  cursor: pointer;
+}
+
+.fas.fa-times:hover {
+  color: var(--red);
+}
+
 /* HEADER */
 .header {
   height: 200px;
