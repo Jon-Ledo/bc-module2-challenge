@@ -14,13 +14,13 @@ Provide a short description explaining the what, why, and how of your project. U
 ### Desktop/Standard View
 
 
-![Desktop/Standard View of this project](/assets/images/portfolio-desktop-view.JPG)
+![Desktop/Standard View of this project](./assets/images/portfolio-desktop-view.JPG)
 
 
 ### Tablet/Mobile View
 
 
-![Tablet/Mobile View of this project](/assets/images/portfolio-tablet-mobile-view.JPG)
+![Tablet/Mobile View of this project](./assets/images/portfolio-tablet-mobile-view.JPG)
 
 
 ## Credits
