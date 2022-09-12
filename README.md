@@ -24,6 +24,9 @@ I also learned that it's important to follow your gut instincts and follow throu
 
 ![Projects Section of this project](/Assets/images/portfolio-projects-section.JPG)
 
+## Links
+- Live Site URL: [live site](https://jon-ledo.github.io/bc-module2-challenge/)
+
 ## Credits
 
 The avatar image used in the banner, thanks to the Mirror Avatar stickers creator found on google play store.
