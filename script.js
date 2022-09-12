@@ -44,7 +44,7 @@ const navObserver = new IntersectionObserver((entries, observer) => {
     changeIcon()
   }
 }, {
-  threshold: 0.7,
+  threshold: 1,
 })
 
 navObserver.observe(aboutSection)
