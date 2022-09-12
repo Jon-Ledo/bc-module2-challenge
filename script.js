@@ -4,6 +4,8 @@ const navbarListContainer = document.querySelector('.navbar__list-container')
 const navLinks = document.querySelectorAll('.navbar__link')
 const icon = document.querySelector('.fas')
 const body = document.querySelector('body')
+const aboutSection = document.querySelector('.about')
+
 
 // toggle active class
 toggleBtn.addEventListener('click', () => {
@@ -33,6 +35,19 @@ bodyArray.forEach(child => {
     })
   }
 })
+
+// scroll down
+const navObserver = new IntersectionObserver((entries, observer) => {
+  const entry = entries[0]
+  if (!entry.isIntersecting) {
+    removeActiveClass()
+    changeIcon()
+  }
+}, {
+  threshold: 0.7,
+})
+
+navObserver.observe(aboutSection)
 
 // FUNCTIONS 
 function toggleActiveClass () {
