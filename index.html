@@ -1,149 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jon Ledo's Web Portfolio</title>
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./Assets/images/favicon.png" type="image/x-icon">
-  <!-- Linked CSS files -->
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/ed48cba7cc.js" crossorigin="anonymous"></script>
-  <!-- Linked JavaScript File -->
-  <script src="./script.js" defer></script>
-</head>
-<body>
-<!-- NAV START -->
-  <section class="nav-section">
-    <div class="wrapper">
-      <p class="nav-section__name">
-        <span>Jon Ledo</span>
-      </p>
-      <nav class="navbar">
-        <div class="navbar__list-container">
-          <ul class="navbar__list">
-            <li><a href="#about" class="navbar__link">About Me</a></li>
-            <li><a href="#projects" class="navbar__link">Projects</a></li>
-            <li><a href="#contact" class="navbar__link">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <!-- hamburger menu hidden by default-->
-      <button class="toggle-btn">
-        <i class="fas fa-bars"></i>
-      </button>
-    </div>
-  </section>
-<!-- NAV END -->
-
-<!-- HEADER -->
-  <header class="header wrapper">
-    <div class="spacing"></div>
-    <div class="header__banner">
-      <h1 class=" header__text">Frontend Developer</h1>
-      <span class="header__span">"It's not a bug, it's<br> an undocumented <br>feature!"</span>
-    </div>
-  </header>
-  <div class="decoration"></div>
-<!-- HEADER END -->
-
-<!-- ABOUT START -->
-  <section id="about" class="wrapper about">
-    <aside class="aside about__aside">
-      <h2 class="about__header">About Me</h2>
-    </aside>
-
-    <article class="about__article">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cum voluptatibus perferendis, aut architecto exercitationem cumque praesentium illo voluptates, assumenda, quis delectus! Blanditiis aut reiciendis neque aliquid iste deleniti ratione quis eligendi tenetur perspiciatis unde sequi ad magni quia ipsum maxime sapiente maiores totam fugit nemo, necessitatibus veniam exercitationem? Nihil!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum commodi odio cupiditate repellendus minima ea aspernatur temporibus? Libero vitae totam ducimus itaque delectus molestiae praesentium facere blanditiis, quas numquam consequuntur reiciendis culpa deserunt tenetur, beatae eius tempore eaque suscipit!</p>
-    </article>
-  </section>
-<!-- ABOUT END -->
-
-<!-- PROJECTS START -->
-  <section id="projects" class="wrapper projects">
-    <aside class="aside projects__aside">
-      <h2 class="projects__header">Projects</h2>
-    </aside>
-
-    <!-- MAIN PROJECT -->
-    <section class="projects-container">
-      <main class="projects__main">
-        <a href="https://github.com/Jon-Ledo" target="_blank" rel="noreferrer">
-          <img class="projects__main__img" src="http://placekitten.com/g/800/400" alt="placeholder kitten image to represent future project image">
-        </a>
-        <article class="main-card">
-          <h3 class="main-card__name">Project Name 1</h3>
-          <p class="main-card__info">Project Info</p>
-        </article>
-      </main>
-      
-      <!-- PROJECT GALLERY -->
-      <section class="projects__gallery">
-        <!-- ITEM 1 -->
-        <article class="card">
-          <a href="https://github.com/Jon-Ledo" target="_blank" rel="noreferrer">
-            <img class="card__img" src="http://placekitten.com/800/1300" alt="placeholder kitten image to represent future project image">
-          </a>
-          <div class="card__container">
-            <h3 class="card__name">Project Name 2</h3>
-            <p class="card__info">Project Info</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jon Ledo's Web Portfolio</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./Assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Linked CSS files -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/ed48cba7cc.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Linked JavaScript File -->
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- NAV START -->
+    <section class="nav-section">
+      <div class="wrapper">
+        <p class="nav-section__name">
+          <span>Jon Ledo</span>
+        </p>
+        <nav class="navbar">
+          <div class="navbar__list-container">
+            <ul class="navbar__list">
+              <li><a href="#about" class="navbar__link">About Me</a></li>
+              <li><a href="#projects" class="navbar__link">Projects</a></li>
+              <li><a href="#contact" class="navbar__link">Contact</a></li>
+            </ul>
           </div>
-        </article>
-        <!-- ITEM 2 -->
-        <article class="card">
-          <a href="https://github.com/Jon-Ledo" target="_blank" rel="noreferrer">
-            <img class="card__img" src="http://placekitten.com/2400/2300" alt="placeholder kitten image to represent future project image">
+        </nav>
+        <!-- hamburger menu hidden by default-->
+        <button class="toggle-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </section>
+    <!-- NAV END -->
+
+    <!-- HEADER -->
+    <header class="header wrapper">
+      <div class="spacing"></div>
+      <div class="header__banner">
+        <h1 class="header__text">Frontend Developer</h1>
+        <span class="header__span"
+          >"It's not a bug, it's<br />
+          an undocumented <br />feature!"</span
+        >
+      </div>
+    </header>
+    <div class="decoration"></div>
+    <!-- HEADER END -->
+
+    <!-- ABOUT START -->
+    <section id="about" class="wrapper about">
+      <aside class="aside about__aside">
+        <h2 class="about__header">About Me</h2>
+      </aside>
+
+      <article class="about__article">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cum
+          voluptatibus perferendis, aut architecto exercitationem cumque
+          praesentium illo voluptates, assumenda, quis delectus! Blanditiis aut
+          reiciendis neque aliquid iste deleniti ratione quis eligendi tenetur
+          perspiciatis unde sequi ad magni quia ipsum maxime sapiente maiores
+          totam fugit nemo, necessitatibus veniam exercitationem? Nihil!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum
+          commodi odio cupiditate repellendus minima ea aspernatur temporibus?
+          Libero vitae totam ducimus itaque delectus molestiae praesentium
+          facere blanditiis, quas numquam consequuntur reiciendis culpa deserunt
+          tenetur, beatae eius tempore eaque suscipit!
+        </p>
+      </article>
+    </section>
+    <!-- ABOUT END -->
+
+    <!-- PROJECTS START -->
+    <section id="projects" class="wrapper projects">
+      <aside class="aside projects__aside">
+        <h2 class="projects__header">Projects</h2>
+      </aside>
+
+      <!-- MAIN PROJECT -->
+      <section class="projects-container">
+        <main class="projects__main">
+          <a
+            href="https://jon-ledo.github.io/Collab-MiniGames-plusAPI/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              class="projects__main__img"
+              src="./Assets/images/minigames-page.JPG"
+              alt="front page for the minigames website"
+            />
           </a>
-          <div class="card__container">
-            <h3 class="card__name">Project Name 3</h3>
-            <p class="card__info">Project Info</p>
-          </div>
-        </article>
-        <!-- ITEM3 -->
-        <article class="card">
-          <a href="https://github.com/Jon-Ledo" target="_blank" rel="noreferrer">
-            <img class="card__img" src="http://placekitten.com/900/500" alt="placeholder kitten image to represent future project image">
-          </a>
-          <div class="card__container">
-            <h3 class="card__name">Project Name 4</h3>
-            <p class="card__info">Project Info</p>
-          </div>
-        </article>
-        <!-- ITEM 4 -->
-        <article class="card">
-          <a href="https://github.com/Jon-Ledo" target="_blank" rel="noreferrer">
-            <img class="card__img" src="http://placekitten.com/500/900" alt="placeholder kitten image to represent future project image">
-          </a>
-          <div class="card__container">
-            <h3 class="card__name">Project Name 5</h3>
-            <p class="card__info">Project Info</p>
-          </div>
-        </article>
+          <article class="main-card">
+            <h3 class="main-card__name">JavaScript Mini Games</h3>
+            <p class="main-card__info">
+              Bootstrap, JavaScript, Git Collaboration
+              <a
+                href="https://github.com/Jon-Ledo/Collab-MiniGames-plusAPI"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Repo
+              </a>
+            </p>
+          </article>
+        </main>
+
+        <!-- PROJECT GALLERY -->
+        <section class="projects__gallery">
+          <!-- ITEM 1 -->
+          <article class="card">
+            <a
+              href="https://github.com/Jon-Ledo"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                class="card__img"
+                src="http://placekitten.com/800/1300"
+                alt="placeholder kitten image to represent future project image"
+              />
+            </a>
+            <div class="card__container">
+              <h3 class="card__name">Project Name 2</h3>
+              <p class="card__info">Project Info</p>
+            </div>
+          </article>
+          <!-- ITEM 2 -->
+          <article class="card">
+            <a
+              href="https://github.com/Jon-Ledo"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                class="card__img"
+                src="http://placekitten.com/2400/2300"
+                alt="placeholder kitten image to represent future project image"
+              />
+            </a>
+            <div class="card__container">
+              <h3 class="card__name">Project Name 3</h3>
+              <p class="card__info">Project Info</p>
+            </div>
+          </article>
+          <!-- ITEM3 -->
+          <article class="card">
+            <a
+              href="https://github.com/Jon-Ledo"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                class="card__img"
+                src="http://placekitten.com/900/500"
+                alt="placeholder kitten image to represent future project image"
+              />
+            </a>
+            <div class="card__container">
+              <h3 class="card__name">Project Name 4</h3>
+              <p class="card__info">Project Info</p>
+            </div>
+          </article>
+          <!-- ITEM 4 -->
+          <article class="card">
+            <a
+              href="https://github.com/Jon-Ledo"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                class="card__img"
+                src="http://placekitten.com/500/900"
+                alt="placeholder kitten image to represent future project image"
+              />
+            </a>
+            <div class="card__container">
+              <h3 class="card__name">Project Name 5</h3>
+              <p class="card__info">Project Info</p>
+            </div>
+          </article>
+        </section>
       </section>
     </section>
-  </section>
-<!-- PROJECTS END -->
+    <!-- PROJECTS END -->
 
-<!-- CONTACT START -->
-  <section id="contact" class="wrapper contact">
-    <aside class="aside contact__aside">
-      <h2 class="contact__header">Contact</h2>
-    </aside>
+    <!-- CONTACT START -->
+    <section id="contact" class="wrapper contact">
+      <aside class="aside contact__aside">
+        <h2 class="contact__header">Contact</h2>
+      </aside>
 
-    <ul class="socials">
-      <li><a href="mailto: jonledo.code@gmail.com" class="socials__link" target="_blank" rel="noreferrer">Email</a></li>
-      <li><a href="https://github.com/Jon-Ledo" class="socials__link" target="_blank" rel="noreferrer">Github</a></li>
-      <li><a href="https://www.linkedin.com/in/jonathan-ledo/" class="socials__link" target="_blank" rel="noreferrer">LinkedIn</a></li>
-    </ul>
-  </section>
-<!-- CONTACT END -->
+      <ul class="socials">
+        <li>
+          <a
+            href="mailto: jonledo.code@gmail.com"
+            class="socials__link"
+            target="_blank"
+            rel="noreferrer"
+            >Email</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/Jon-Ledo"
+            class="socials__link"
+            target="_blank"
+            rel="noreferrer"
+            >Github</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/jonathan-ledo/"
+            class="socials__link"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </section>
+    <!-- CONTACT END -->
 
-  <footer>
-    <p class="wrapper">© 2022. All rights reserved.</p>
-  </footer>
-</body>
+    <footer>
+      <p class="wrapper">© 2022. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
